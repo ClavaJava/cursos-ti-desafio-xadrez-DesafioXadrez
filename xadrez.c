@@ -1,42 +1,37 @@
+/*
+  Autor: JOÃO VICTOR CASTELHANO DE PAULA
+  CPF: 035.603.380-50
+  Desafio: Simular movimentos de peças de xadrez (nível novato)
+*/
+
 #include <stdio.h>
 
 int main() {
-// Movimento da TORRE - usando FOR
-    printf("Movimento da Torre (5 casas para a direita):\n");
-
-
-    int torre;
-
-
-    for (torre = 0; torre <= 4; torre ++) {
-        printf("DIREITA \n");
-    }
-     printf("\n"); // linha em branco para separar as seções
-
-
-    printf("Movimento do Bispo (5 casas para cima e direita):\n");
-
-    int bispo = 1;
-
-    while (bispo <= 5) {
-     printf("CIMA e DIREITA\n");
-     bispo++;
+    // Movimento da Torre: 5 casas para a direita
+    printf("Movimento da Torre:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Direita\n");
     }
 
-    printf("\n"); // linha em branco para separar as seções
+    printf("\n");
 
-    printf("Movimento da Rainha (8 casas para esquerda):\n");
+    // Movimento do Bispo: 5 casas na diagonal para cima e à direita
+    printf("Movimento do Bispo:\n");
+    int i = 0;
+    while (i < 5) {
+        printf("Cima, Direita\n");
+        i++;
+    }
 
+    printf("\n");
 
-    int rainha = 1;
-
+    // Movimento da Rainha: 8 casas para a esquerda
+    printf("Movimento da Rainha:\n");
+    int j = 0;
     do {
-      printf("ESQUERDA\n");
-      rainha++;
-      } while (rainha <=8 );
-
-
-
+        printf("Esquerda\n");
+        j++;
+    } while (j < 8);
 
     return 0;
 }
